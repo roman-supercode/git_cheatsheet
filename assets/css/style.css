@@ -1,3 +1,7 @@
+/* ======================
+    Global Styles
+======================= */
+
 @font-face {
     font-family: 'Open Sans';
     src: url("../fonts/OpenSans-Regular.ttf");
@@ -10,35 +14,73 @@
     font-family: 'Open Sans';
 }
 
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: #fffee0;
+    opacity: 1;
+    background-image: radial-gradient(#444cf7 1.35px, #fffee0 1.35px);
+    background-size: 27px 27px;
+}
+
+/* ======================
+   Header Styles
+======================= */
+
 header,
-section {
-    width: 620px;
-    margin: 20px auto;
-    padding: 20px;
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-section {
-    background-color: rgb(230, 221, 221);
-}
-
-h1 {
+header h1 {
+    font-size: 3rem;
+    padding: 2rem;
     text-decoration: underline;
     font-weight: bolder;
 }
 
-li {
-    list-style-type: none;
-    margin: 10px 0;
+header p {
+    font-size: 1.5rem;
+    padding: 2rem;
 }
 
-span {
-    padding: 6px;
-    background-color: bisque;
-    border: 2px solid bisque;
-    border-radius: 10px;
+/* ======================
+    Main Styles
+======================= */
+
+main section {
+    width: 30%;
+    background-color: #FFFEE0;
+    margin: 5rem auto;
+    border-radius: 5px;
+    box-shadow: 20px 20px 50px;
 }
 
 main h2 {
-    margin: 25px 0;
+    margin: 2rem auto;
     font-weight: bolder;
+    font-size: 2.5rem;
+    border-bottom: 1px solid;
 }
+
+main section ul li {
+    list-style-type: none;
+    padding-bottom: 1.2rem;
+    margin: 1rem;
+    font-size: 1.4rem;
+}
+
+span {
+    padding: 1rem;
+    background-color: #444CF7;
+    color: white;
+    border-radius: 5px;
+}
+
+/* ======================
+   Work in progress
+======================= */
